@@ -4,7 +4,7 @@ Starter kit for building typescript-based npm modules tested with mocha. See `TE
 
 ## Usage
 
-> npm install typescript-starter-module --save
+> npm install @mcrowe/typescript-starter-module --save
 
 ## Development
 
@@ -22,7 +22,9 @@ Build:
 
 Publish to npm:
 
-Update the version in `package.json`, then publish using:
+1. Update the version in `package.json`
 
-> npm publish
+2. Build using `npm run build`
+
+3. Publish using `npm publish --access=public`
 

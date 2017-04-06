@@ -1,14 +1,15 @@
 {
-  "name": "typescript-starter-module",
+  "name": "@mcrowe/todo",
   "version": "0.0.1",
-  "description": "",
+  "description": "todo",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
   "license": "ISC",
+  "repository": "todo",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -u qunit --recursive -r ./node_modules/ts-node/register test/*",
     "build": "./node_modules/typescript/bin/tsc"
   },
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "typings": "lib/index",
   "files": [
     "lib/"
