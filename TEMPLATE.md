@@ -1,5 +1,2 @@
-- Update README.md
-- Update package.json
-- Remove .git
-- Initialize new git repository and commit
-- Remove TEMPLATE.md
+1. Copy this directory: `cp -rf template ./my-package`
+2. Install: `./bin/install.sh`

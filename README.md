@@ -1,10 +1,10 @@
-# Typescript Starter Module
+# [PACKAGE_NAME]
 
-Starter kit for building typescript-based npm modules tested with mocha. See `TEMPLATE.md` for usage.
+[PACKAGE_DESCRIPTION]
 
 ## Usage
 
-> npm install @mcrowe/typescript-starter-module --save
+> npm install @mcrowe/[PACKAGE_NAME] --save
 
 ## Development
 
@@ -16,15 +16,10 @@ Run tests:
 
 > npm test
 
-Build:
+## Release
 
-> npm run build
+Release a new version:
 
-Publish to npm:
+> bin/release.sh
 
-1. Update the version in `package.json`
-
-2. Build using `npm run build`
-
-3. Publish using `npm publish --access=public`
-
+This will publish a new version to npm, as well as push a new tag up to github.
