@@ -4,7 +4,7 @@
   "description": "todo",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
   "license": "ISC",
-  "repository": "todo",
+  "repository": "https://github.com/mcrowe/todo",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -u qunit --recursive -r ./node_modules/ts-node/register test/*",
     "build": "./node_modules/typescript/bin/tsc"

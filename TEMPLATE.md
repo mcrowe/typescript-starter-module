@@ -1,3 +1,5 @@
 - Update README.md
 - Update package.json
+- Remove .git
+- Initialize new git repository and commit
 - Remove TEMPLATE.md
