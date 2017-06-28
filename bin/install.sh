@@ -12,8 +12,8 @@ echo "Create a new github repository? (yes/no):"
 read repo
 
 echo "Updating package.json and README.md"
-replace "PACKAGE_NAME" "$name"
-replace "PACKAGE_DESCRIPTION" "$description"
+replace "package_name" "$name"
+replace "package_description" "$description"
 
 echo "Removing template files"
 rm TEMPLATE.md
@@ -29,6 +29,7 @@ if [ "$repo" == "yes" ]
 then
   echo "Creating new github repo"
   curl -u 'mcrowe' https://api.github.com/user/repos -d "{\"name\":\"$name\",\"description\":\"$description\"}"
-  git remote add origin git@github.com:mcrowe/projectname.git
+  git remote add origin git@github.com:mcrowe/$name.git
   git push origin master
+  git push --set-upstream origin master
 fi

@@ -1,10 +1,10 @@
-# [PACKAGE_NAME]
+# package_name
 
-[PACKAGE_DESCRIPTION]
+package_description
 
 ## Usage
 
-> npm install @mcrowe/[PACKAGE_NAME] --save
+> npm install @mcrowe/package_name --save
 
 ## Development
 
