@@ -1,25 +1,28 @@
 {
-  "name": "@mcrowe/package_name",
-  "version": "0.0.0",
-  "description": "package_description",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
-  "license": "ISC",
-  "repository": "https://github.com/mcrowe/package_name",
-  "scripts": {
-    "test": "mocha -u qunit --recursive -r ./node_modules/ts-node/register test/*",
-    "build": "tsc",
-    "watch": "tsc -w"
+  "ava": {
+    "files": [
+      "lib/**/*.test.js"
+    ],
+    "verbose": true
   },
-  "main": "lib/index.js",
-  "typings": "lib/index",
+  "description": "package_description",
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "ava": "^0.21.0",
+    "typescript": "^2.4.2"
+  },
   "files": [
     "lib/"
   ],
-  "devDependencies": {
-    "@types/mocha": "^2.2.41",
-    "@types/node": "^7.0.12",
-    "mocha": "^3.4.2",
-    "ts-node": "^3.1.0",
-    "typescript": "^2.4.1"
-  }
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "@mcrowe/package_name",
+  "repository": "https://github.com/mcrowe/package_name",
+  "scripts": {
+    "build": "tsc",
+    "test": "ava",
+    "watch": "tsc -w"
+  },
+  "version": "0.0.1"
 }

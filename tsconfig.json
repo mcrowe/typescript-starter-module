@@ -4,8 +4,11 @@
     "declaration": true,
     "outDir": "lib/",
     "target": "es2015",
-    "noImplicitAny": false,
-    "strictNullChecks": true
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true
   },
   "include": [
     "src/**/*"
