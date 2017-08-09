@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function replace() {
-  find package.json README.md -type f -exec sed -i "" "s/\[$1\]/$2/g" {} +
+  find package.json README.md -type f -exec sed -i "" "s/$1/$2/g" {} +
 }
 
 echo "Enter your package name (kebab-case):"
