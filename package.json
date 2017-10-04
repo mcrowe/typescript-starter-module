@@ -7,6 +7,9 @@
     "verbose": true
   },
   "description": "package_description",
+  "dependencies": {
+
+  },
   "devDependencies": {
     "@types/node": "^7.0.12",
     "ava": "^0.21.0",
@@ -24,5 +27,6 @@
     "test": "ava",
     "watch": "tsc -w"
   },
+  "typings": "lib/index",
   "version": "0.0.1"
 }
